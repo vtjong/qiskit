@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/main.py", line 146, in main
+    trainloader = data.trainloader
+AttributeError: 'Data' object has no attribute 'trainloader'

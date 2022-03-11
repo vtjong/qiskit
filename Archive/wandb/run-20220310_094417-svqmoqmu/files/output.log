@@ -1,0 +1,53 @@
+
+Problem at: /Users/valenetjong/qiskit/binaryHybridQNN/main.py 30 <module>
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 227, in _communicate_async
+    resp = self._communicate(req, local=True)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 222, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 227, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 954, in init
+    run = wi.init()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 662, in init
+    run._on_start()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1778, in _on_start
+    self._on_ready()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1791, in _on_ready
+    self._telemetry_flush()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 481, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Abnormal program exit
+Traceback (most recent call last):
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 954, in init
+    run = wi.init()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 662, in init
+    run._on_start()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1778, in _on_start
+    self._on_ready()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1791, in _on_ready
+    self._telemetry_flush()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 481, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/binaryHybridQNN/main.py", line 30, in <module>
+    wandb.init(config=config_defaults)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 992, in init
+    six.raise_from(Exception("problem"), error_seen)
+  File "<string>", line 3, in raise_from
+Exception: problem

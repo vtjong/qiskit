@@ -1,0 +1,42 @@
+2022-03-10 09:51:00,227 INFO    MainThread:8016 [wandb_setup.py:_flush():75] Loading settings from /Users/valenetjong/.config/wandb/settings
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_setup.py:_flush():75] Loading settings from /Users/valenetjong/qiskit/wandb/settings
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'binaryHybridQNN/main.py', 'program': '/Users/valenetjong/qiskit/binaryHybridQNN/main.py'}
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_init.py:_log_setup():405] Logging user logs to /Users/valenetjong/qiskit/wandb/run-20220310_095100-2238j8mr/logs/debug.log
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_init.py:_log_setup():406] Logging internal logs to /Users/valenetjong/qiskit/wandb/run-20220310_095100-2238j8mr/logs/debug-internal.log
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_init.py:init():439] calling init triggers
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_init.py:init():442] wandb.init called with sweep_config: {}
+config: {'epochs': 20, 'batch_size': 1, 'learn_rate': 0.001, 'optimizer': 'adam', 'momentum': 0.9, 'dropout': 0.2}
+2022-03-10 09:51:00,228 INFO    MainThread:8016 [wandb_init.py:init():492] starting backend
+2022-03-10 09:51:00,229 INFO    MainThread:8016 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-03-10 09:51:00,247 INFO    MainThread:8016 [backend.py:ensure_launched():219] starting backend process...
+2022-03-10 09:51:00,260 INFO    MainThread:8016 [backend.py:ensure_launched():224] started backend process with pid: 8025
+2022-03-10 09:51:00,264 INFO    MainThread:8016 [wandb_init.py:init():501] backend started and connected
+2022-03-10 09:51:00,270 INFO    MainThread:8016 [wandb_init.py:init():565] updated telemetry
+2022-03-10 09:51:00,274 INFO    MainThread:8016 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-03-10 09:51:01,257 INFO    MainThread:8016 [wandb_run.py:_on_init():1759] communicating current version
+2022-03-10 09:51:01,433 INFO    MainThread:8016 [wandb_run.py:_on_init():1763] got version response 
+2022-03-10 09:51:01,433 INFO    MainThread:8016 [wandb_init.py:init():625] starting run threads in backend
+2022-03-10 09:51:06,459 INFO    MainThread:8016 [wandb_run.py:_console_start():1733] atexit reg
+2022-03-10 09:51:06,461 INFO    MainThread:8016 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.REDIRECT
+2022-03-10 09:51:06,462 INFO    MainThread:8016 [wandb_run.py:_redirect():1611] Redirecting console.
+2022-03-10 09:51:06,469 INFO    MainThread:8016 [wandb_run.py:_redirect():1667] Redirects installed.
+2022-03-10 09:51:06,485 ERROR   MainThread:8016 [wandb_init.py:init():981] error
+Traceback (most recent call last):
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 954, in init
+    run = wi.init()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 662, in init
+    run._on_start()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1778, in _on_start
+    self._on_ready()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1791, in _on_ready
+    self._telemetry_flush()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 481, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2022-03-10 09:51:08,496 INFO    MainThread:8016 [wandb_run.py:_atexit_cleanup():1702] got exitcode: 1
+2022-03-10 09:51:08,497 INFO    MainThread:8016 [wandb_run.py:_restore():1674] restore

@@ -1,0 +1,26 @@
+100.0%
+102.8%
+100.0%
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting ./data/MNIST/raw/train-images-idx3-ubyte.gz to ./data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting ./data/MNIST/raw/train-labels-idx1-ubyte.gz to ./data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting ./data/MNIST/raw/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting ./data/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./data/MNIST/raw
+112.7%
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/CCNN/main.py", line 163, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/CCNN/main.py", line 151, in main
+    data = Data(batch_size)
+  File "/Users/valenetjong/qiskit/CCNN/datasetmaker.py", line 10, in __init__
+    self.trainloader = self.trainingdata()
+  File "/Users/valenetjong/qiskit/CCNN/datasetmaker.py", line 21, in trainingdata
+    train_loader[:self.n_train]
+AttributeError: 'Data' object has no attribute 'n_train'

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/CCNN/main.py", line 169, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/CCNN/main.py", line 165, in main
+    session.test()
+NameError: name 'session' is not defined

@@ -1,0 +1,28 @@
+/Users/valenetjong/qiskit/hybridQNN/hybridnet.py:30: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.log_softmax(x)
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 89, in train
+    loss = error(outputs, labels)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 211, in forward
+    return F.nll_loss(input, target, weight=self.weight, ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/functional.py", line 2532, in nll_loss
+    return torch._C._nn.nll_loss_nd(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+IndexError: Target 6 is out of bounds.
+tensor([6])
+result {'0101': 4, '1001': 8, '1000': 6, '1010': 13, '1011': 10, '0111': 6, '0001': 6, '0011': 7, '1101': 8, '1111': 4, '1110': 3, '0100': 5, '1100': 4, '0000': 8, '0010': 5, '0110': 3}
+counts [ 4  8  6 13 10  6  6  7  8  4  3  5  4  8  5  3]
+states [1.010e+02 1.001e+03 1.000e+03 1.010e+03 1.011e+03 1.110e+02 1.000e+00
+ 1.100e+01 1.101e+03 1.111e+03 1.110e+03 1.000e+02 1.100e+03 0.000e+00
+ 1.000e+01 1.100e+02]
+[0.14764269 0.29528539 0.22146404 0.47983876 0.36910674 0.22146404
+ 0.22146404 0.25837471 0.29528539 0.14764269 0.11073202 0.18455337
+ 0.14764269 0.29528539 0.18455337 0.11073202]
+[2224.34791871]
+x tensor([[2224.3479187141]], dtype=torch.float64,
+       grad_fn=<HybridFunctionBackward>)

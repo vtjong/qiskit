@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/CCNN/main.py", line 163, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/CCNN/main.py", line 151, in main
+    data = Data(batch_size)
+  File "/Users/valenetjong/qiskit/CCNN/datasetmaker.py", line 10, in __init__
+    self.trainloader = self.trainingdata()
+  File "/Users/valenetjong/qiskit/CCNN/datasetmaker.py", line 21, in trainingdata
+    train_loader[:self.n_train]
+AttributeError: 'Data' object has no attribute 'n_train'

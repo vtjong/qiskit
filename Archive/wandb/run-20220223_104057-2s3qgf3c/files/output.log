@@ -1,0 +1,31 @@
+/Users/valenetjong/qiskit/hybridlayers.py:67: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  result = torch.tensor([expectation_z])
+/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/autograd/__init__.py:154: UserWarning: Error detected in MseLossBackward0. Traceback of forward call that caused the error:
+  File "/Users/valenetjong/qiskit/main.py", line 154, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/main.py", line 149, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/main.py", line 89, in train
+    loss = error(outputs.double(), labels)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 520, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/functional.py", line 3112, in mse_loss
+    return torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+ (Triggered internally at  ../torch/csrc/autograd/python_anomaly_mode.cpp:104.)
+  Variable._execution_engine.run_backward(
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/main.py", line 154, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/main.py", line 149, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/main.py", line 92, in train
+    loss.backward()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: Found dtype Long but expected Double

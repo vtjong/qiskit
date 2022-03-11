@@ -1,0 +1,28 @@
+    status_response = self._interface.communicate_stop_status()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 114, in communicate_stop_status
+    resp = self._communicate_stop_status(status)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 378, in _communicate_stop_status
+    resp = self._communicate(req, local=True)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 213, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 218, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 83, in train
+    for batch_idx, (inputs, labels) in enumerate(self.trainloader):
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torchvision/datasets/mnist.py", line 127, in __getitem__
+    img, target = self.data[index], int(self.targets[index])
+ValueError: only one element tensors can be converted to Python scalars

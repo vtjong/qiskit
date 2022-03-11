@@ -1,0 +1,23 @@
+
+Problem at: /Users/valenetjong/qiskit/binaryHybridQNN/main.py 32 <module>
+Traceback (most recent call last):
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 954, in init
+    run = wi.init()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 662, in init
+    run._on_start()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1778, in _on_start
+    self._on_ready()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1791, in _on_ready
+    self._telemetry_flush()
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 481, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 99, in send_record_publish
+    self.send_server_request(server_req)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 57, in send_server_request
+    self._send_message(msg)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 54, in _send_message
+    self._sock.send(header + data)

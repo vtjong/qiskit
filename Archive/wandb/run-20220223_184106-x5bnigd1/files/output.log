@@ -1,0 +1,24 @@
+tensor([6])
+result {'1011': 8, '1010': 5, '0111': 8, '0001': 7, '0011': 7, '1111': 7, '1101': 7, '1001': 5, '1000': 7, '0100': 3, '1100': 7, '1110': 7, '0110': 3, '0101': 9, '0000': 5, '0010': 5}
+counts [8 5 8 7 7 7 7 5 7 3 7 7 3 9 5 5]
+states <generator object QuantumCircuit.run.<locals>.<genexpr> at 0x7f9e998e3c80>
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 88, in train
+    outputs = self.model(inputs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridnet.py", line 28, in forward
+    x = self.hybrid(x)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 103, in forward
+    return HybridFunction.apply(input, self.quantum_circuit, self.shift)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 69, in forward
+    expectation_z = ctx.quantum_circuit.run(input[0].tolist())
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 56, in run
+    expectation = np.sum(states * probabilities)
+TypeError: unsupported operand type(s) for *: 'generator' and 'float'

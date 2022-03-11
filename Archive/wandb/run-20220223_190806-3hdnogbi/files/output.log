@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 89, in train
+    loss = error(outputs, labels)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 211, in forward
+    return F.nll_loss(input, target, weight=self.weight, ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/functional.py", line 2532, in nll_loss
+    return torch._C._nn.nll_loss_nd(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+RuntimeError: "nll_loss_out_frame" not implemented for 'Long'
+tensor([6])
+result {'1010': 2, '0000': 1, '1001': 3, '0010': 13, '0101': 7, '1011': 6, '0110': 6, '1100': 3, '0100': 6, '0011': 14, '0001': 8, '0111': 8, '1101': 2, '1111': 7, '1000': 4, '1110': 10}
+counts [ 2  1  3 13  7  6  6  3  6 14  8  8  2  7  4 10]
+states [1.010e+03 0.000e+00 1.001e+03 1.000e+01 1.010e+02 1.011e+03 1.100e+02
+ 1.100e+03 1.000e+02 1.100e+01 1.000e+00 1.110e+02 1.101e+03 1.111e+03
+ 1.000e+03 1.110e+03]
+[0.06892455 0.03446228 0.10338683 0.44800959 0.24123593 0.20677366
+ 0.20677366 0.10338683 0.20677366 0.48247186 0.27569821 0.27569821
+ 0.06892455 0.24123593 0.1378491  0.34462276]
+x tensor([9])

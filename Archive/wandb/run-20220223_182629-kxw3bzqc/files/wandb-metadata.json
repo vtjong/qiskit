@@ -1,0 +1,22 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-02-23T23:26:30.350724",
+    "startedAt": "2022-02-23T23:26:29.169708",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/valenetjong/qiskit/hybridQNN/main.py",
+    "codePath": "hybridQNN/main.py",
+    "git": {
+        "remote": "https://github.com/vtjong/qiskit.git",
+        "commit": null
+    },
+    "email": null,
+    "root": "/Users/valenetjong/qiskit",
+    "host": "Valenes-MacBook-Pro.local",
+    "username": "valenetjong",
+    "executable": "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/bin/python"
+}

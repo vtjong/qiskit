@@ -1,0 +1,26 @@
+/Users/valenetjong/qiskit/hybridQNN/hybridnet.py:30: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.log_softmax(x)
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 88, in train
+    outputs = self.model(inputs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridnet.py", line 30, in forward
+    return F.log_softmax(x)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/functional.py", line 1769, in log_softmax
+    ret = input.log_softmax(dim)
+RuntimeError: "log_softmax_lastdim_kernel_impl" not implemented for 'Long'
+tensor([6])
+result {'1000': 6, '0001': 3, '0011': 3, '0100': 3, '1100': 9, '0110': 13, '1111': 6, '1101': 9, '1011': 6, '0111': 4, '1110': 6, '1001': 6, '1010': 8, '0101': 8, '0000': 5, '0010': 5}
+counts [ 6  3  3  3  9 13  6  9  6  4  6  6  8  8  5  5]
+states [1.000e+03 1.000e+00 1.100e+01 1.000e+02 1.100e+03 1.100e+02 1.111e+03
+ 1.101e+03 1.011e+03 1.110e+02 1.110e+03 1.001e+03 1.010e+03 1.010e+02
+ 0.000e+00 1.000e+01]
+[0.22176638 0.11088319 0.11088319 0.11088319 0.33264957 0.48049383
+ 0.22176638 0.33264957 0.22176638 0.14784425 0.22176638 0.22176638
+ 0.29568851 0.29568851 0.18480532 0.18480532]
+x tensor([5])

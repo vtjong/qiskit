@@ -1,0 +1,149 @@
+2022-02-23 19:07:29,603 INFO    MainThread:35747 [internal.py:wandb_internal():89] W&B internal server running at pid: 35747, started at: 2022-02-23 19:07:29.603715
+2022-02-23 19:07:29,605 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: check_version
+2022-02-23 19:07:29,605 INFO    WriterThread:35747 [datastore.py:open_for_write():77] open: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/run-gvcbaace.wandb
+2022-02-23 19:07:29,607 DEBUG   SenderThread:35747 [sender.py:send():235] send: header
+2022-02-23 19:07:29,607 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: check_version
+2022-02-23 19:07:29,770 DEBUG   SenderThread:35747 [sender.py:send():235] send: run
+2022-02-23 19:07:30,028 INFO    SenderThread:35747 [dir_watcher.py:__init__():169] watching files in: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files
+2022-02-23 19:07:30,028 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: run_start
+2022-02-23 19:07:30,028 INFO    SenderThread:35747 [sender.py:_start_run_threads():809] run started: gvcbaace with start time 1645661248
+2022-02-23 19:07:30,031 DEBUG   SenderThread:35747 [sender.py:send():235] send: summary
+2022-02-23 19:07:30,031 DEBUG   HandlerThread:35747 [meta.py:__init__():36] meta init
+2022-02-23 19:07:30,031 DEBUG   HandlerThread:35747 [meta.py:__init__():50] meta init done
+2022-02-23 19:07:30,031 INFO    SenderThread:35747 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-23 19:07:30,031 DEBUG   HandlerThread:35747 [meta.py:probe():210] probe
+2022-02-23 19:07:30,040 DEBUG   HandlerThread:35747 [meta.py:_setup_git():200] setup git
+2022-02-23 19:07:30,063 DEBUG   HandlerThread:35747 [meta.py:_setup_git():207] setup git done
+2022-02-23 19:07:30,063 DEBUG   HandlerThread:35747 [meta.py:_save_pip():54] save pip
+2022-02-23 19:07:30,063 DEBUG   HandlerThread:35747 [meta.py:_save_pip():68] save pip done
+2022-02-23 19:07:30,063 DEBUG   HandlerThread:35747 [meta.py:_save_conda():75] save conda
+2022-02-23 19:07:31,034 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-summary.json
+2022-02-23 19:07:31,034 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/requirements.txt
+2022-02-23 19:07:31,034 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/conda-environment.yaml
+2022-02-23 19:07:31,942 DEBUG   HandlerThread:35747 [meta.py:_save_conda():85] save conda done
+2022-02-23 19:07:31,942 DEBUG   HandlerThread:35747 [meta.py:probe():248] probe done
+2022-02-23 19:07:31,945 DEBUG   SenderThread:35747 [sender.py:send():235] send: files
+2022-02-23 19:07:31,946 INFO    SenderThread:35747 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-23 19:07:31,988 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-23 19:07:31,988 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: stop_status
+2022-02-23 19:07:32,039 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/conda-environment.yaml
+2022-02-23 19:07:32,039 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/output.log
+2022-02-23 19:07:32,039 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-metadata.json
+2022-02-23 19:07:32,546 INFO    Thread-11 :35747 [upload_job.py:push():137] Uploaded file /var/folders/1x/23xb47sx0675p75hlkw93bfr0000gn/T/tmpl19lbksuwandb/pak8nkl0-wandb-metadata.json
+2022-02-23 19:07:34,049 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/output.log
+2022-02-23 19:07:35,000 DEBUG   SenderThread:35747 [sender.py:send():235] send: telemetry
+2022-02-23 19:07:35,001 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:35,001 DEBUG   SenderThread:35747 [sender.py:send():235] send: exit
+2022-02-23 19:07:35,002 INFO    SenderThread:35747 [sender.py:send_exit():371] handling exit code: 1
+2022-02-23 19:07:35,002 INFO    SenderThread:35747 [sender.py:send_exit():373] handling runtime: 4
+2022-02-23 19:07:35,005 INFO    SenderThread:35747 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-23 19:07:35,005 INFO    SenderThread:35747 [sender.py:send_exit():379] send defer
+2022-02-23 19:07:35,006 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:35,007 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:35,007 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-23 19:07:35,008 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:35,008 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-23 19:07:35,008 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 1
+2022-02-23 19:07:35,009 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:35,009 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-23 19:07:35,055 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/output.log
+2022-02-23 19:07:35,055 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-summary.json
+2022-02-23 19:07:35,060 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:35,061 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-23 19:07:35,061 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 2
+2022-02-23 19:07:35,061 DEBUG   SenderThread:35747 [sender.py:send():235] send: stats
+2022-02-23 19:07:35,062 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:35,062 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-23 19:07:35,063 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:35,063 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-23 19:07:35,063 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 3
+2022-02-23 19:07:35,063 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:35,063 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-23 19:07:35,064 DEBUG   SenderThread:35747 [sender.py:send():235] send: summary
+2022-02-23 19:07:35,064 INFO    SenderThread:35747 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-23 19:07:35,064 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:35,064 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-23 19:07:35,064 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 4
+2022-02-23 19:07:35,065 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:35,065 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-23 19:07:35,065 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:35,065 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-23 19:07:35,113 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:35,258 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 5
+2022-02-23 19:07:35,258 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:35,259 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:35,259 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-23 19:07:35,259 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:35,260 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-23 19:07:35,260 INFO    SenderThread:35747 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-23 19:07:35,367 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,059 INFO    Thread-8  :35747 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/config.yaml
+2022-02-23 19:07:36,061 INFO    SenderThread:35747 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-summary.json
+2022-02-23 19:07:36,062 INFO    SenderThread:35747 [dir_watcher.py:finish():313] scan: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files
+2022-02-23 19:07:36,062 INFO    SenderThread:35747 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/requirements.txt requirements.txt
+2022-02-23 19:07:36,063 INFO    SenderThread:35747 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/output.log output.log
+2022-02-23 19:07:36,064 INFO    SenderThread:35747 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/config.yaml config.yaml
+2022-02-23 19:07:36,072 INFO    SenderThread:35747 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-summary.json wandb-summary.json
+2022-02-23 19:07:36,077 INFO    SenderThread:35747 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/conda-environment.yaml conda-environment.yaml
+2022-02-23 19:07:36,082 INFO    SenderThread:35747 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-metadata.json wandb-metadata.json
+2022-02-23 19:07:36,083 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 6
+2022-02-23 19:07:36,083 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,083 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:36,087 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-23 19:07:36,087 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:36,088 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-23 19:07:36,088 INFO    SenderThread:35747 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-23 19:07:36,193 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,193 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,296 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,296 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,399 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,400 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,508 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,508 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,613 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,614 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,654 INFO    Thread-14 :35747 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/config.yaml
+2022-02-23 19:07:36,668 INFO    Thread-16 :35747 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/conda-environment.yaml
+2022-02-23 19:07:36,671 INFO    Thread-13 :35747 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/output.log
+2022-02-23 19:07:36,677 INFO    Thread-15 :35747 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/wandb-summary.json
+2022-02-23 19:07:36,721 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,721 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,830 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,831 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:36,879 INFO    Thread-12 :35747 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/files/requirements.txt
+2022-02-23 19:07:36,940 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:36,941 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:37,051 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:37,052 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:37,084 INFO    Thread-7  :35747 [sender.py:transition_state():392] send defer: 7
+2022-02-23 19:07:37,086 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:37,086 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-23 19:07:37,086 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:37,086 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-23 19:07:37,160 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:37,360 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 8
+2022-02-23 19:07:37,361 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:37,362 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:37,362 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-23 19:07:37,363 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:37,363 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-23 19:07:37,363 INFO    SenderThread:35747 [sender.py:transition_state():392] send defer: 9
+2022-02-23 19:07:37,364 DEBUG   SenderThread:35747 [sender.py:send():235] send: final
+2022-02-23 19:07:37,364 DEBUG   SenderThread:35747 [sender.py:send():235] send: footer
+2022-02-23 19:07:37,364 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 19:07:37,365 INFO    HandlerThread:35747 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-23 19:07:37,365 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: defer
+2022-02-23 19:07:37,365 INFO    SenderThread:35747 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-23 19:07:37,471 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 19:07:37,472 DEBUG   SenderThread:35747 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 19:07:37,472 INFO    SenderThread:35747 [file_pusher.py:join():182] waiting for file pusher
+2022-02-23 19:07:37,782 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-23 19:07:37,783 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-23 19:07:37,784 DEBUG   HandlerThread:35747 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-23 19:07:37,784 INFO    HandlerThread:35747 [handler.py:finish():739] shutting down handler
+2022-02-23 19:07:38,376 INFO    WriterThread:35747 [datastore.py:close():281] close: /Users/valenetjong/qiskit/wandb/run-20220223_190728-gvcbaace/run-gvcbaace.wandb
+2022-02-23 19:07:38,781 INFO    SenderThread:35747 [sender.py:finish():1075] shutting down sender
+2022-02-23 19:07:38,782 INFO    SenderThread:35747 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-23 19:07:38,782 INFO    SenderThread:35747 [file_pusher.py:join():182] waiting for file pusher
+2022-02-23 19:07:38,793 INFO    MainThread:35747 [internal.py:handle_exit():79] Internal process exited

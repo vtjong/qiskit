@@ -1,0 +1,24 @@
+tensor([6])
+result {'1010': 3, '0110': 5, '1110': 5, '1111': 11, '1101': 5, '1001': 4, '0101': 7, '1100': 5, '0100': 9, '1000': 7, '0000': 4, '0010': 7, '0001': 4, '0011': 8, '0111': 8, '1011': 8}
+counts [ 3  5  5 11  5  4  7  5  9  7  4  7  4  8  8  8]
+states <map object at 0x7fc6cd09a5b0>
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 88, in train
+    outputs = self.model(inputs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridnet.py", line 28, in forward
+    x = self.hybrid(x)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 104, in forward
+    return HybridFunction.apply(input, self.quantum_circuit, self.shift)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 70, in forward
+    expectation_z = ctx.quantum_circuit.run(input[0].tolist())
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 57, in run
+    expectation = np.sum(states * probabilities)
+TypeError: unsupported operand type(s) for *: 'map' and 'float'

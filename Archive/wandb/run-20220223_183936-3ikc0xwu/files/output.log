@@ -1,0 +1,25 @@
+tensor([6])
+result {'1001': 5, '1010': 4, '0010': 9, '0110': 8, '0111': 4, '0001': 7, '0011': 8, '1101': 7, '1111': 5, '1011': 8, '0000': 4, '1110': 3, '0100': 7, '1100': 7, '1000': 5, '0101': 9}
+counts dict_values([5, 4, 9, 8, 4, 7, 8, 7, 5, 8, 4, 3, 7, 7, 5, 9])
+states ['1001' '1010' '0010' '0110' '0111' '0001' '0011' '1101' '1111' '1011'
+ '0000' '1110' '0100' '1100' '1000' '0101']
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 88, in train
+    outputs = self.model(inputs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridnet.py", line 28, in forward
+    x = self.hybrid(x)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 103, in forward
+    return HybridFunction.apply(input, self.quantum_circuit, self.shift)
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 69, in forward
+    expectation_z = ctx.quantum_circuit.run(input[0].tolist())
+  File "/Users/valenetjong/qiskit/hybridQNN/hybridlayers.py", line 54, in run
+    probabilities = counts / self.shots
+TypeError: unsupported operand type(s) for /: 'dict_values' and 'int'

@@ -1,0 +1,159 @@
+2022-02-23 08:50:07,545 INFO    MainThread:28820 [internal.py:wandb_internal():89] W&B internal server running at pid: 28820, started at: 2022-02-23 08:50:07.544947
+2022-02-23 08:50:07,546 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: check_version
+2022-02-23 08:50:07,547 INFO    WriterThread:28820 [datastore.py:open_for_write():77] open: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/run-2qsqr43t.wandb
+2022-02-23 08:50:07,548 DEBUG   SenderThread:28820 [sender.py:send():235] send: header
+2022-02-23 08:50:07,548 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: check_version
+2022-02-23 08:50:07,704 DEBUG   SenderThread:28820 [sender.py:send():235] send: run
+2022-02-23 08:50:08,200 INFO    SenderThread:28820 [dir_watcher.py:__init__():169] watching files in: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files
+2022-02-23 08:50:08,201 INFO    SenderThread:28820 [sender.py:_start_run_threads():809] run started: 2qsqr43t with start time 1645624206
+2022-02-23 08:50:08,201 DEBUG   SenderThread:28820 [sender.py:send():235] send: summary
+2022-02-23 08:50:08,201 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: run_start
+2022-02-23 08:50:08,204 DEBUG   HandlerThread:28820 [meta.py:__init__():36] meta init
+2022-02-23 08:50:08,204 DEBUG   HandlerThread:28820 [meta.py:__init__():50] meta init done
+2022-02-23 08:50:08,204 DEBUG   HandlerThread:28820 [meta.py:probe():210] probe
+2022-02-23 08:50:08,205 INFO    SenderThread:28820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-23 08:50:08,215 DEBUG   HandlerThread:28820 [meta.py:_setup_git():200] setup git
+2022-02-23 08:50:08,239 DEBUG   HandlerThread:28820 [meta.py:_setup_git():207] setup git done
+2022-02-23 08:50:08,239 DEBUG   HandlerThread:28820 [meta.py:_save_pip():54] save pip
+2022-02-23 08:50:08,240 DEBUG   HandlerThread:28820 [meta.py:_save_pip():68] save pip done
+2022-02-23 08:50:08,240 DEBUG   HandlerThread:28820 [meta.py:_save_conda():75] save conda
+2022-02-23 08:50:09,206 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/requirements.txt
+2022-02-23 08:50:09,206 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/conda-environment.yaml
+2022-02-23 08:50:09,206 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/wandb-summary.json
+2022-02-23 08:50:09,859 DEBUG   HandlerThread:28820 [meta.py:_save_conda():85] save conda done
+2022-02-23 08:50:09,859 DEBUG   HandlerThread:28820 [meta.py:probe():248] probe done
+2022-02-23 08:50:09,862 DEBUG   SenderThread:28820 [sender.py:send():235] send: files
+2022-02-23 08:50:09,862 INFO    SenderThread:28820 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-23 08:50:09,891 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-23 08:50:09,892 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: stop_status
+2022-02-23 08:50:10,210 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/conda-environment.yaml
+2022-02-23 08:50:10,210 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/wandb-metadata.json
+2022-02-23 08:50:10,210 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/output.log
+2022-02-23 08:50:11,884 DEBUG   SenderThread:28820 [sender.py:send():235] send: telemetry
+2022-02-23 08:50:11,885 DEBUG   SenderThread:28820 [sender.py:send():235] send: exit
+2022-02-23 08:50:11,885 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:11,885 INFO    SenderThread:28820 [sender.py:send_exit():371] handling exit code: 1
+2022-02-23 08:50:11,886 INFO    SenderThread:28820 [sender.py:send_exit():373] handling runtime: 3
+2022-02-23 08:50:11,887 INFO    SenderThread:28820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-23 08:50:11,887 INFO    SenderThread:28820 [sender.py:send_exit():379] send defer
+2022-02-23 08:50:11,887 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:11,888 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:11,888 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-23 08:50:11,889 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:11,889 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-23 08:50:11,889 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 1
+2022-02-23 08:50:11,889 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:11,889 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-23 08:50:11,896 INFO    Thread-11 :28820 [upload_job.py:push():137] Uploaded file /var/folders/1x/23xb47sx0675p75hlkw93bfr0000gn/T/tmpyo7sp6kbwandb/2xziheyr-wandb-metadata.json
+2022-02-23 08:50:11,987 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:11,987 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-23 08:50:11,988 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 2
+2022-02-23 08:50:11,989 DEBUG   SenderThread:28820 [sender.py:send():235] send: stats
+2022-02-23 08:50:11,990 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:11,990 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-23 08:50:11,990 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:11,991 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-23 08:50:11,991 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 3
+2022-02-23 08:50:11,991 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:11,991 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-23 08:50:11,991 DEBUG   SenderThread:28820 [sender.py:send():235] send: summary
+2022-02-23 08:50:11,992 INFO    SenderThread:28820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-23 08:50:11,992 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:11,993 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-23 08:50:11,993 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 4
+2022-02-23 08:50:11,993 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:11,993 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-23 08:50:11,993 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:11,993 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-23 08:50:12,000 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:12,221 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/output.log
+2022-02-23 08:50:12,221 INFO    Thread-8  :28820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/wandb-summary.json
+2022-02-23 08:50:12,831 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 5
+2022-02-23 08:50:12,831 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:12,832 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:12,832 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-23 08:50:12,832 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:12,832 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-23 08:50:12,833 INFO    SenderThread:28820 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-23 08:50:12,939 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,227 INFO    SenderThread:28820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/config.yaml
+2022-02-23 08:50:13,228 INFO    SenderThread:28820 [dir_watcher.py:finish():313] scan: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files
+2022-02-23 08:50:13,228 INFO    SenderThread:28820 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/requirements.txt requirements.txt
+2022-02-23 08:50:13,229 INFO    SenderThread:28820 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/output.log output.log
+2022-02-23 08:50:13,234 INFO    SenderThread:28820 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/config.yaml config.yaml
+2022-02-23 08:50:13,238 INFO    SenderThread:28820 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/wandb-summary.json wandb-summary.json
+2022-02-23 08:50:13,243 INFO    SenderThread:28820 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/conda-environment.yaml conda-environment.yaml
+2022-02-23 08:50:13,248 INFO    SenderThread:28820 [dir_watcher.py:finish():327] scan save: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/wandb-metadata.json wandb-metadata.json
+2022-02-23 08:50:13,248 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 6
+2022-02-23 08:50:13,248 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:13,252 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:13,253 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-23 08:50:13,254 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:13,254 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-23 08:50:13,254 INFO    SenderThread:28820 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-23 08:50:13,357 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,358 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:13,463 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,463 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:13,570 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,571 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:13,680 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,681 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:13,788 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,789 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:13,894 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:13,894 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,002 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,003 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,107 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,108 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,223 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,223 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,327 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,328 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,436 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,438 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,544 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,545 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,651 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,653 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,735 INFO    Thread-16 :28820 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/conda-environment.yaml
+2022-02-23 08:50:14,736 INFO    Thread-13 :28820 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/output.log
+2022-02-23 08:50:14,739 INFO    Thread-12 :28820 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/requirements.txt
+2022-02-23 08:50:14,742 INFO    Thread-14 :28820 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/config.yaml
+2022-02-23 08:50:14,744 INFO    Thread-15 :28820 [upload_job.py:push():137] Uploaded file /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/files/wandb-summary.json
+2022-02-23 08:50:14,758 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,758 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,866 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:14,867 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:14,950 INFO    Thread-7  :28820 [sender.py:transition_state():392] send defer: 7
+2022-02-23 08:50:14,952 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:14,952 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-23 08:50:14,953 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:14,953 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-23 08:50:14,976 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:15,132 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 8
+2022-02-23 08:50:15,133 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:15,134 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:15,134 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-23 08:50:15,134 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:15,134 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-23 08:50:15,134 INFO    SenderThread:28820 [sender.py:transition_state():392] send defer: 9
+2022-02-23 08:50:15,135 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: defer
+2022-02-23 08:50:15,135 INFO    HandlerThread:28820 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-23 08:50:15,135 DEBUG   SenderThread:28820 [sender.py:send():235] send: final
+2022-02-23 08:50:15,135 DEBUG   SenderThread:28820 [sender.py:send():235] send: footer
+2022-02-23 08:50:15,135 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: defer
+2022-02-23 08:50:15,136 INFO    SenderThread:28820 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-23 08:50:15,239 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-23 08:50:15,240 DEBUG   SenderThread:28820 [sender.py:send_request():249] send_request: poll_exit
+2022-02-23 08:50:15,241 INFO    SenderThread:28820 [file_pusher.py:join():182] waiting for file pusher
+2022-02-23 08:50:15,614 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-23 08:50:15,615 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-23 08:50:15,616 DEBUG   HandlerThread:28820 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-23 08:50:15,616 INFO    HandlerThread:28820 [handler.py:finish():739] shutting down handler
+2022-02-23 08:50:16,140 INFO    WriterThread:28820 [datastore.py:close():281] close: /Users/valenetjong/qiskit/wandb/run-20220223_085006-2qsqr43t/run-2qsqr43t.wandb
+2022-02-23 08:50:16,618 INFO    SenderThread:28820 [sender.py:finish():1075] shutting down sender
+2022-02-23 08:50:16,618 INFO    SenderThread:28820 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-23 08:50:16,619 INFO    SenderThread:28820 [file_pusher.py:join():182] waiting for file pusher
+2022-02-23 08:50:16,621 INFO    MainThread:28820 [internal.py:handle_exit():79] Internal process exited

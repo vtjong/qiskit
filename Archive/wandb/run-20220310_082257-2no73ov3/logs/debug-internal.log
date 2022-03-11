@@ -1,0 +1,11 @@
+2022-03-10 08:22:58,103 INFO    MainThread:2864 [internal.py:wandb_internal():89] W&B internal server running at pid: 2864, started at: 2022-03-10 08:22:58.098212
+2022-03-10 08:22:58,104 DEBUG   HandlerThread:2864 [handler.py:handle_request():131] handle_request: check_version
+2022-03-10 08:22:58,104 INFO    WriterThread:2864 [datastore.py:open_for_write():77] open: /Users/valenetjong/qiskit/wandb/run-20220310_082257-2no73ov3/run-2no73ov3.wandb
+2022-03-10 08:22:58,105 DEBUG   SenderThread:2864 [sender.py:send():235] send: header
+2022-03-10 08:22:58,105 DEBUG   SenderThread:2864 [sender.py:send_request():249] send_request: check_version
+2022-03-10 08:22:58,263 DEBUG   SenderThread:2864 [sender.py:send():235] send: run
+2022-03-10 08:22:58,456 INFO    SenderThread:2864 [dir_watcher.py:__init__():169] watching files in: /Users/valenetjong/qiskit/wandb/run-20220310_082257-2no73ov3/files
+2022-03-10 08:22:58,456 INFO    SenderThread:2864 [sender.py:_start_run_threads():809] run started: 2no73ov3 with start time 1646918577
+2022-03-10 08:22:58,457 DEBUG   SenderThread:2864 [sender.py:send():235] send: summary
+2022-03-10 08:22:58,457 INFO    SenderThread:2864 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-10 08:22:58,457 DEBUG   HandlerThread:2864 [handler.py:handle_request():131] handle_request: run_start

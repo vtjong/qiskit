@@ -1,0 +1,24 @@
+tensor([6])
+result {'1001': 5, '0000': 4, '1110': 5, '0011': 4, '0001': 7, '1011': 10, '0101': 5, '1100': 7, '0100': 6, '0110': 6, '1111': 6, '1101': 7, '0111': 5, '1010': 7, '0010': 4, '1000': 12}
+counts [ 5  4  5  4  7 10  5  7  6  6  6  7  5  7  4 12]
+states [1.001e+03 0.000e+00 1.110e+03 1.100e+01 1.000e+00 1.011e+03 1.010e+02
+ 1.100e+03 1.000e+02 1.100e+02 1.111e+03 1.101e+03 1.110e+02 1.010e+03
+ 1.000e+01 1.000e+03]
+[0.18952451 0.15161961 0.18952451 0.15161961 0.26533432 0.37904902
+ 0.18952451 0.26533432 0.22742941 0.22742941 0.22742941 0.26533432
+ 0.18952451 0.26533432 0.15161961 0.45485883]
+x tensor([15])
+Traceback (most recent call last):
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 157, in <module>
+    main()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 152, in main
+    session.train()
+  File "/Users/valenetjong/qiskit/hybridQNN/main.py", line 89, in train
+    loss = error(outputs, labels)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 211, in forward
+    return F.nll_loss(input, target, weight=self.weight, ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/Users/valenetjong/opt/anaconda3/envs/qiskit_env/lib/python3.9/site-packages/torch/nn/functional.py", line 2532, in nll_loss
+    return torch._C._nn.nll_loss_nd(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+TypeError: nll_loss_nd(): argument 'input' (position 1) must be Tensor, not float
